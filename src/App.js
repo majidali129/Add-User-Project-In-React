@@ -1,8 +1,7 @@
 import './App.css';
 import AddUser from './component/AddUser';
-// import UserList from './component/UserList';
 import React, {useState} from 'react';
-import UserInfo from './component/UserInfo';
+import UserList from './component/UserList';
 
 
 function App() {
@@ -22,9 +21,10 @@ function App() {
   return (
     <div className="App">
       <AddUser newData={newUserData}/>
-      <UserInfo users={newUser} />
+      <UserList users={newUser} />
     </div>
   );
 }
 
 export default App;
+
